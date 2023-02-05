@@ -11,13 +11,11 @@ function MyRecipeComponent({label,image, calories,ingredients,mealType,cuisineTy
         </div>
         <div className="container">
             <ul className="list">
-                {ingredients.map((ingredient,index) => {
-                    return<div key={index}>
-                    <li >
+                {ingredients.map((ingredient,index) => (
+                    <li key={index}>
                         <img src="https://img.icons8.com/external-febrian-hidayat-gradient-febrian-hidayat/512/external-check-ui-essential-febrian-hidayat-gradient-febrian-hidayat.png" alt="check" 
                     className="icon"/> {ingredient}</li>
-                    </div>
-                })}
+                ))}
             </ul>
         </div>
         <div className="container">
